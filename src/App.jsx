@@ -1,63 +1,27 @@
 import React from 'react'
-import {motion} from 'motion/react'
+import {motion,useScroll} from 'motion/react'
 
 const App = () => {
+  const scrollYProgress=useScroll().scrollYProgress;
+
+  console.log(scrollYProgress);
+
+
   return (
     <>
-        <div>
-          <motion.div className="box" 
 
-          whileHover={{
-            backgroundColor:'purple'
-          }}
+    <motion.div 
+    style={{
+      scaleX:scrollYProgress
+    }}
+    className='w-full h-3 bg-red-800 origin-left fixed to-0 left-0'></motion.div>
 
-
-          initial={{
-            x:500,
-
-          }}
-
-          animate={{
-            x:1000,
-            rotate:360
-          }}
-          
-          transition={{
-            duration:4,
-            repeat:Infinity
-
-          }}
-
-          ></motion.div>   
+    <div className='p-20 text-center'>
+       <motion.h1 className="text-center text-2xl text-amber-500 mb-8">Sheryians Coding School</motion.h1>
+      <motion.div className='text-center text-zinc-50 '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla velit quia repellendus deleniti, maxime provident enim deserunt quibusdam, accusamus in soluta explicabo libero aspernatur consequatur dicta sed nostrum praesentium non tempora repellat vitae obcaecati quos ratione modi. Maiores soluta explicabo porro nulla doloremque repellendus excepturi quibusdam placeat corrupti officia? <br /> <br/> <br/>Corporis consequatur deserunt temporibus possimus modi! Ipsum suscipit, doloribus harum maxime dignissimos accusamus minima! Earum commodi pariatur praesentium dicta ipsam? Omnis exercitationem vero numquam aperiam eius animi modi quasi ea, pariatur esse. Fugit, veniam. Cum, aliquam quis sequi laudantium nostrum dolores labore rem nam, ipsa, laboriosam reiciendis quam tenetur maiores atque ipsam iure? Quo eius soluta, maxime nihil aspernatur ipsa ullam ratione veritatis tempora harum! Eum odit mollitia, autem, quisquam iure, dolor iusto quos doloremque debitis maiores labore vel in sequi. Laudantium quas officiis libero facere, dolor quo placeat dolores itaque, aliquam aut est quis ad ut doloremque harum ipsum. Dolorum debitis cum maxime rem culpa error veniam ratione ipsam dicta doloremque eveniet sint vero aspernatur nobis placeat distinctio adipisci incidunt, est repellendus sed fugiat aut fuga. Iure, quis. Placeat vero voluptatum dolore inventore consectetur adipisci, repudiandae distinctio optio ut blanditiis omnis expedita quis sint veniam asperiores, quos odit excepturi aspernatur aliquid, iusto at. Ab error eveniet, accusamus beatae ipsa voluptas earum totam magni nemo autem corrupti vitae eos vel aliquam porro ducimus veniam cupiditate corporis nihil. Obcaecati veritatis veniam nemo perspiciatis minus debitis ipsum numquam, autem, impedit rem optio odio, nisi quis quo earum. Molestiae illum molestias quod iure repudiandae officiis iste itaque aut odio cumque, atque sapiente ab ratione nulla eveniet. Culpa totam, corporis, natus reiciendis veritatis nihil voluptate impedit repudiandae id, ipsam architecto alias? Ex repudiandae quisquam, id maiores magnam alias. Fugit soluta eveniet in natus repellendus porro facere recusandae non ea? Ipsa saepe quam quia tenetur, pariatur minima amet! Laudantium praesentium vero error ipsum atque sequi, quidem alias fuga eius eveniet minus quod reprehenderit dolor doloremque saepe provident in animi veritatis officiis quaerat ducimus consectetur. Beatae recusandae magnam dicta voluptas atque reprehenderit minus quibusdam architecto quam, maxime illum nulla molestiae accusamus voluptates et, dignissimos suscipit qui nobis maiores dolores reiciendis totam animi. Exercitationem aliquam voluptas ut, veniam illo commodi repudiandae tempore laborum vel esse laboriosam cumque odio perferendis non corrupti, sit deleniti maxime eveniet! Nesciunt inventore provident rerum, tempore,<br/> <br/> <br />hic laborum aperiam molestiae deserunt non, animi reprehenderit deleniti dolores fuga? Omnis sequi nemo provident eum voluptatem in vero aperiam culpa, quasi quidem illum dolorem beatae placeat voluptates veniam dolores non laborum nesciunt obcaecati labore facere debitis. Dicta velit maxime delectus nulla porro sit deserunt fuga, autem, similique hic corporis ratione? Quis blanditiis sit aperiam dolore non perferendis rerum! Officia fugiat eius nulla beatae repellendus inventore quaerat rem. Vitae, eligendi. Dolore possimus praesentium laudantium iure eveniet, hic incidunt quibusdam quod quos. Saepe, maxime animi? In quos ex repudiandae! Repellat asperiores fugiat tempora eveniet nobis veniam totam omnis ad dolorum beatae necessitatibus, numquam quidem dolores adipisci porro! At necessitatibus voluptas sunt perspiciatis earum nisi illum dolorem? Aut sequi numquam ut atque iste sit quos earum ipsam illo incidunt, fugit maiores facere mollitia beatae porro alias dolorem at maxime reiciendis, accusantium quam itaque vitae voluptas? Atque facere expedita quae explicabo repudiandae hic sequi repellat quisquam ipsam harum, voluptates ea repellendus itaque iusto est non exercitationem placeat ut fuga amet dolore. Rem commodi omnis, eligendi ipsum autem iusto perspiciatis error cupiditate repellendus unde totam, atque adipisci quia, labore officiis! Excepturi consequuntur sint vero. 
+      <br/>
+      officiis porro consequatur nesciunt necessitatibus saepe doloribus commodi! Libero vero laudantium, suscipit ad culpa autem earum quam laboriosam quod, nisi eum alias ipsum nihil excepturi eveniet provident impedit at distinctio repellendus ea! Quasi error possimus maxime labore dolores? Sit accusamus asperiores nam, cupiditate aut illo odit distinctio. Minus numquam, eaque aperiam facere necessitatibus odit vel unde voluptatem sapiente esse magni sequi ea autem non repellendus exercitationem? Qui, voluptatibus, nesciunt nihil dolores, eaque totam magni ipsam officia recusandae odit iure? Non praesentium itaque ea! Sunt quidem corporis deleniti, perferendis facilis nemo nostrum qui pariatur eum, unde rerum tempore. Accusamus rerum tempora commodi voluptate nam quaerat, eos porro quo voluptatum! Aspernatur incidunt voluptatibus totam earum asperiores repellat, facilis officia ipsum non rerum, mollitia, id odio! Tempora quod quaerat omnis ipsa!</motion.div>
       </div>
-
-      <div>
-      <motion.div className="circle" 
-
-      drag
-      whileDrag={{
-        scale:0.5
-      }}
-
-      dragConstraints={{
-        left:0,
-        right:1000,
-        top:0,
-        bottom:100
-      }}
-
-      dragDirectionLock='true'
-
-
-      whileTap={{
-        backgroundColor:"palegreen",
-        scale:0.7
-      }}
-
-      animate={{
-        x:100,
-      }}></motion.div>
-     </div>
    </>
   )
 }
